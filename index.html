@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advertisement</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: #f0f0f0;
+            gap: 20px;
+        }
+        iframe { border: none;
+            background: white;
+            overflow: hidden; }
+    </style>
+</head>
+<body>
+<iframe id="ad1" width="970" height="250"></iframe>
+<iframe id="ad2" width="970" height="250"></iframe>
+
+<script>
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            ad1.src = './old/Advertisement.html';
+            ad2.src = './new/000831-NewBizz-VW_970x250_NL.html';
+        }, 500);
+    });
+</script>
+</body>
+</html>
