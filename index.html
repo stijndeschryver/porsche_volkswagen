@@ -20,14 +20,23 @@
     </style>
 </head>
 <body>
-<iframe id="ad1" width="970" height="250"></iframe>
-<iframe id="ad2" width="970" height="250"></iframe>
+<div class="row">
+    <iframe id="ad1" width="300" height="600"></iframe>
+    <iframe id="ad2" width="300" height="600"></iframe>
+</div>
+
+<div class="column">
+    <iframe id="ad3" width="970" height="250"></iframe>
+    <iframe id="ad4" width="970" height="250"></iframe>
+</div>
 
 <script>
     window.addEventListener('load', () => {
         setTimeout(() => {
-            ad1.src = './old/Advertisement.html';
-            ad2.src = './new/000831-NewBizz-VW_970x250_NL.html';
+            ad1.src = './porsche-old/PORS2501_PHEV_BANNERS-PANAMERA-NL-300x600.html';
+            ad2.src = './porsche-new/000831-NewBizz-Porsche_300x600_NL.html';
+            ad3.src = './volkswagen-old/Advertisement.html';
+            ad4.src = './volkswagen-new/000831-NewBizz-VW_970x250_NL.html';
         }, 500);
     });
 </script>
